@@ -1,5 +1,6 @@
 from setuptools import setup
 
+
 def readme():
     with open('README.md') as f:
         return f.read()
@@ -14,7 +15,8 @@ setup(name='helpscout_to_hubspot',
       packages=['helpscout_to_hubspot'],
       install_requires=[
           'envparse',
-          'requests'
+          'requests',
+          'requests-cache'
       ],
       test_suite='nose.collector',
       tests_require=['nose'],
